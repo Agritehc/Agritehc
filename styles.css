@@ -1,0 +1,159 @@
+body {
+    font-family: 'Cairo', sans-serif; /* استخدام الخط الجديد */
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* اتجاه النص من اليمين لليسار */
+}
+
+header {
+    font-family: 'Cairo', sans-serif; /* استخدام الخط الجديد */
+    background-color: #1E5631; /* أخضر داكن مشبع */
+    color: #FFFFFF; /* النص باللون الأبيض */
+    text-align: right;
+    font-size: 0.8em;
+    padding: 10px 0;
+    padding-right: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 100px; /* حجم الشعار */
+    height: 90px; /* نفس العرض والطول */
+    position: absolute;
+    top: 5px; /* تعديل موضع الشعار */
+    left: 2px; /* تعديل موضع الشعار */
+    border-radius: 50%; /* لجعل الشعار دائري */
+    box-shadow: 0 0 5px 5px rgba(234, 237, 238, 0.8); /* تأثير اللمعان */
+    transition: box-shadow 0.3s ease; /* تأثير عند التمرير */
+}
+
+.logo:hover {
+    box-shadow: 0 0 25px 10px rgb(252, 252, 251); /* زيادة اللمعان عند التمرير */
+}
+
+h1 {
+    margin: 20px 0 20px; /* تعديل المسافات */
+    padding-right: 20px; /* إضافة مسافة بين العنوان والجانب الأيمن */
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* للسماح بتوزيع المنتجات بشكل أفضل */
+    padding: 20px;
+}
+
+.product {
+    background-color: rgb(241, 177, 0);
+    border: 3px solid #017227;
+    border-radius: 50px; /* زوايا دائرية */
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* عرض أكبر للمنتجات */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير ظل */
+    transition: transform 0.2s; /* تأثير التحرك عند التمرير */
+}
+
+.product:hover {
+    transform: scale(1.05); /* تكبير المنتج عند التمرير عليه */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    top: 20px; /* تعديل موضع الشعار */
+    border-radius: 20px; /* زوايا دائرية للصورة */
+    box-shadow: 0 4px 8px rgba(251, 252, 251, 0.432); /* تأثير ظل */
+}
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #003a13;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s; /* تأثير تدرج اللون عند التمرير */
+    box-shadow: 0 4px 8px rgba(4, 240, 4, 0.432); /* تأثير ظل */
+}
+
+.details-button:hover {
+    background-color: #218838;
+}
+
+.product-details {
+    text-align: center; /* توسيط النص */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.product-details img {
+    display: block; /* عرض الصورة ككتلة */
+    margin: 40px auto 0; /* تعديل المسافة من الأعلى */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.795); /* تأثير ظل */
+    border-radius: 40px;
+    width: 50%;
+    height: auto;
+}
+
+footer a:hover i {
+    transform: scale(1.1); /* تكبير الأيقونة عند التمرير */
+}
+
+/* نصميم صفحه معلومات ععنا */
+
+main {
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: #059218; /* لون جذاب للرؤوس */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+
+
+
+
+/* استجابة التصميم */
+@media (max-width: 768px) {
+    .product {
+        width: 100%; /* عرض المنتج بالكامل في الشاشات الصغيرة */
+        margin: 10px 0; /* مسافة بين المنتجات */
+    }
+
+    header {
+        padding: 15px 0; /* تعديل الحشوة في الهيدر */
+    }
+
+    .logo {
+        width: 80px; /* حجم أصغر للشعار في الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0; /* تعديل الحشوة في الهيدر للشاشات الصغيرة جداً */
+    }
+
+    .logo {
+        width: 60px; /* حجم أصغر للشعار في الشاشات الصغيرة جداً */
+    }
+
+    h1 {
+        font-size: 1.5em; /* تصغير حجم الخط في الهيدر */
+    }
+
+    .details-button {
+        padding: 8px 10px; /* تقليل حجم الأزرار في الشاشات الصغيرة */
+    }
+}

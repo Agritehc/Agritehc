@@ -72,16 +72,16 @@ h1 {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #003a13;
+    background-color: #086825;
     color: white;
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s; /* تأثير تدرج اللون عند التمرير */
-    box-shadow: 0 4px 8px rgba(4, 240, 4, 0.432); /* تأثير ظل */
+    box-shadow: 0 4px 8px rgb(247, 247, 247); /* تأثير ظل */
 }
 
 .details-button:hover {
-    background-color: #218838;
+    background-color: #086825;
 }
 
 .product-details {

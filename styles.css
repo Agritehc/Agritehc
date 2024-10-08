@@ -77,12 +77,13 @@ h1 {
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s; /* تأثير تدرج اللون عند التمرير */
-    box-shadow: 0 4px 8px rgb(247, 247, 247); /* تأثير ظل */
+    box-shadow: 0 4px 8px rgb(255, 255, 255); /* تأثير ظل */
 }
 
 .details-button:hover {
-    background-color: #086825;
+    background-color: #034918;
 }
+
 
 .product-details {
     text-align: center; /* توسيط النص */
